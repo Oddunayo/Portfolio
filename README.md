@@ -1,2 +1,2 @@
 # my-portfolio
-a portfolio for myself
+a portfolio for my html progress
