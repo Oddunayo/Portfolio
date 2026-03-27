@@ -1,4 +1,4 @@
-@import url("htpps://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -43,7 +43,9 @@ body {
 }
 
 .header.sticky {
-  background: var(--bg-color);
+  background: rgba(8, 27, 41, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: .1rem solid rgba(0, 171, 240, 0.2);
 }
 
 .logo {
@@ -110,6 +112,12 @@ section {
   margin: 2rem 0 4rem;
 }
 
+.btn:active {
+  background: var(--text-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+  transform: scale(0.95);
+}
 .btn-box {
   position: relative;
   display: flex;
@@ -139,6 +147,7 @@ section {
 
 .btn-box .btn:hover {
   color: var(--main-color);
+  box-shadow: 0 0 1rem var(--main-color);
 }
 
 .btn-box .btn:nth-child(2) {
@@ -234,6 +243,11 @@ span {
   border-radius: 80px;
   border: 0.2rem solid var(--main-color);
   margin-bottom: 3rem;
+}
+.about-img img:hover {
+  border-color: var(--main-color);
+  transform: scale(1.02);
+  transition: .3s;
 }
 
 .about-content {
@@ -467,6 +481,7 @@ span {
 
 .contact form .btn-box.btns .btn {
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .footer {
